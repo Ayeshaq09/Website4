@@ -1,0 +1,33 @@
+.footer{
+    padding:118px 20px;
+    background-color: $dark-blue-grey;
+
+    .footer__website-logo{
+        float:left;
+        width:40%;
+        a{
+            margin:0px;
+        }
+    }
+
+    .footer__company,
+    .footer__locations,
+    .footer__social-media{
+        float:left;
+        width:20%;
+    }
+    h5{
+        color:#ffffff;
+    }
+    a{
+        color:#ffffff;
+        display: inline-block;
+        text-decoration: none;  
+        margin:4px 0px;
+
+        &:hover{
+            color:$bright-blue;
+        }
+    }
+    
+}

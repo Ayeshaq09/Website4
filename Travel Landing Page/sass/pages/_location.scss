@@ -1,0 +1,45 @@
+.location{
+    padding:0px 20px 140px 20px;
+
+    .location__tottori__row{
+        .location__tottori__row--img{
+            float:left;
+            width:50%;
+        }
+
+        .location__tottori__row--info{
+            float: right;
+            width:50%;
+            padding-left: 50px;
+        }
+    }
+
+
+    .location__arashiyama__row{
+        margin-top: 77px;
+        .location__arashiyama__row--info{
+            float:left;
+            width:50%;
+            padding-left: 50px;
+        }
+
+        .location__arashiyama__row--img{
+            float: right;
+            width:50%;
+        }
+    }
+
+    img{
+        width:100%;
+        height:auto;
+    }
+    .location--info__heading{
+        max-width: 350px;
+        margin:26px 0px 45px 0px;
+    }
+    .location--info__content{
+        color:$dark-slate-blue;
+        max-width: 520px;
+        margin-bottom: 60px;
+    }
+}

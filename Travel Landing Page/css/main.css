@@ -1,0 +1,735 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: 400;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 500;
+  src: url(../fonts/Lato-Medium.ttf);
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 700;
+  src: url(../fonts/Lato-Bold.ttf);
+}
+.primary-container {
+  max-width: 1100px;
+  margin: 0px auto;
+}
+
+.secondary-container {
+  max-width: 1300px;
+  margin: 0px auto;
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: block;
+  content: "";
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.anchor-style {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #006dfe;
+}
+.anchor-style:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.anchor-icon-style {
+  color: #006dfe;
+  padding-left: 20px;
+}
+
+.underline {
+  max-width: 253px;
+  border: 2px solid #006dfe;
+  margin: 10px 0px 30px 0px;
+}
+
+.large {
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.medium {
+  font-size: 35px;
+  font-weight: 500;
+  color: #102746;
+}
+
+.small {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #102746;
+}
+
+.extra-small {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header a {
+  display: inline-block;
+}
+.header img {
+  width: 82px;
+  height: auto;
+}
+.header .header__nav {
+  float: right;
+}
+.header .header__nav .navbar {
+  list-style: none;
+}
+.header .header__nav .navbar li {
+  display: inline-block;
+}
+.header .header__nav .navbar li a {
+  font-size: 18px;
+  text-transform: none;
+  color: #ffffff;
+  display: inline-block;
+  margin: 0px 70px 0px 0px;
+  padding: 0px 12px 12px 12px;
+  text-decoration: none;
+  position: relative;
+}
+.header .header__nav .navbar li a::after {
+  content: "";
+  width: 0%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0px;
+  background: #ffffff;
+  height: 4px;
+  transition: all 0.5s;
+}
+.header .header__nav .navbar li a:hover::after {
+  width: 100%;
+}
+.header .header__nav .navbar li:nth-child(4) a:nth-child(1) {
+  margin-right: 0px;
+}
+.header .checkbtn i {
+  color: #ffffff;
+  font-size: 25px;
+  position: absolute;
+  right: 60px;
+  top: 58px;
+  cursor: pointer;
+  display: none;
+}
+.header #check {
+  display: none;
+}
+
+.small-btn, .large-btn {
+  display: inline-block;
+  background-color: #006dfe;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.large-btn {
+  font-size: 24px;
+  width: 170px;
+  height: 58px;
+  padding-top: 12px;
+}
+.large-btn:hover {
+  background-color: #ffffff;
+  color: #006dfe;
+  transition: all 0.5s;
+}
+
+.small-btn {
+  color: #ffffff;
+  width: 118px;
+  height: 42px;
+  padding-top: 8px;
+}
+.small-btn:hover {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 0.5s;
+}
+
+.hero {
+  background-image: url(../images/hero@2x.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 56px 20px 350px 20px;
+}
+.hero .hero__elem .hero__elem--heading {
+  max-width: 620px;
+  margin: 176px 0px 22px 0px;
+}
+.hero .hero__elem .hero__elem--content {
+  color: #ffffff;
+  max-width: 550px;
+  margin-bottom: 60px;
+}
+.hero .hero__search--input-field {
+  width: 300px;
+  height: 50px;
+  float: left;
+  border-bottom: 3px solid #ffffff;
+  margin-right: 60px;
+}
+.hero .hero__search--input-field i {
+  float: left;
+  width: 10%;
+  color: #ffffff;
+  margin-top: 3px;
+}
+.hero .hero__search--input-field input {
+  float: left;
+  width: 90%;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+.hero .hero__search--input-field ::placeholder {
+  color: #ffffff;
+}
+.hero .hero__search--btn {
+  float: left;
+}
+
+.benefits {
+  max-width: 1262px;
+  margin: -200px auto 0px auto;
+  padding: 90px 60px 110px 99px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.16);
+}
+.benefits .benefits__heading {
+  margin-bottom: 100px;
+}
+.benefits .benefits__elem {
+  float: left;
+  width: 33.3%;
+}
+.benefits .benefits__elem img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 35px;
+}
+.benefits .benefits__elem .benefits__elem--heading {
+  color: #000000;
+  margin-bottom: 26px;
+}
+.benefits .benefits__elem .benefits__elem--content {
+  color: #000000;
+  margin-bottom: 40px;
+  max-width: 320px;
+}
+
+.location__images {
+  padding: 130px 20px;
+}
+.location__images .location__images__elem--left {
+  float: left;
+}
+.location__images a {
+  float: right;
+  margin: 15px 10px 0px 0px;
+}
+.location__images .location__images--first__row .location__images--box {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+.location__images .location__images--first__row img {
+  height: 354px;
+  filter: brightness(50%);
+  width: 99%;
+}
+.location__images .location__images--second__row .location__images--box {
+  float: left;
+  width: 33.3%;
+  position: relative;
+}
+.location__images .location__images--second__row img {
+  height: 283px;
+  filter: brightness(50%);
+  width: 99%;
+}
+.location__images .location__images--box:hover img {
+  filter: brightness(100%);
+  transition: filter 0.5s;
+}
+.location__images .location__images--box:hover .loc-name {
+  visibility: hidden;
+}
+.location__images .loc-name {
+  font-weight: 700;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.location {
+  padding: 0px 20px 140px 20px;
+}
+.location .location__tottori__row .location__tottori__row--img {
+  float: left;
+  width: 50%;
+}
+.location .location__tottori__row .location__tottori__row--info {
+  float: right;
+  width: 50%;
+  padding-left: 50px;
+}
+.location .location__arashiyama__row {
+  margin-top: 77px;
+}
+.location .location__arashiyama__row .location__arashiyama__row--info {
+  float: left;
+  width: 50%;
+  padding-left: 50px;
+}
+.location .location__arashiyama__row .location__arashiyama__row--img {
+  float: right;
+  width: 50%;
+}
+.location img {
+  width: 100%;
+  height: auto;
+}
+.location .location--info__heading {
+  max-width: 350px;
+  margin: 26px 0px 45px 0px;
+}
+.location .location--info__content {
+  color: #102746;
+  max-width: 520px;
+  margin-bottom: 60px;
+}
+
+.top__places {
+  padding: 0px 20px 144px 20px;
+}
+.top__places .location--heading {
+  margin-left: 25px;
+}
+.top__places .underline {
+  margin-left: 25px;
+}
+.top__places .top__places--img__box {
+  float: left;
+  width: 33.33%;
+}
+.top__places .top__places--img__box__container {
+  max-width: 386px;
+  margin: 0px auto;
+}
+.top__places .enlarge {
+  width: 100%;
+  position: relative;
+}
+.top__places .enlarge:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s;
+}
+.top__places img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+.top__places .top__places--img__info {
+  margin: 45px 0px 30px 0px;
+  max-width: 380px;
+  color: #102746;
+}
+.top__places .top__places--img__des {
+  width: 100%;
+  height: 55px;
+  background-color: rgba(21, 24, 36, 0.6);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 15px 20px 0px 20px;
+}
+.top__places .top__places--names {
+  float: left;
+  width: 50%;
+}
+.top__places .top__places--names p {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.top__places .top__places--likes {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+.top__places .top__places--likes p {
+  color: #ffffff;
+}
+.top__places .top__places--likes p i {
+  color: #ffffff;
+  font-size: 16px;
+}
+.top__places .top__places--second__row {
+  margin-top: 60px;
+}
+
+.video {
+  position: relative;
+  /* padding: 0; */
+  /* overflow: hidden; */
+  padding-bottom: 56.25%;
+  width: 100%;
+  height: 0;
+  /* .video::before{
+      padding-bottom:56.25%;
+  } */
+}
+.video iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  padding: 118px 20px;
+  background-color: #0e1d28;
+}
+.footer .footer__website-logo {
+  float: left;
+  width: 40%;
+}
+.footer .footer__website-logo a {
+  margin: 0px;
+}
+.footer .footer__company,
+.footer .footer__locations,
+.footer .footer__social-media {
+  float: left;
+  width: 20%;
+}
+.footer h5 {
+  color: #ffffff;
+}
+.footer a {
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  margin: 4px 0px;
+}
+.footer a:hover {
+  color: #006dfe;
+}
+
+@media screen and (max-width: 1200px) {
+  .location__images .loc-name {
+    font-size: 40px;
+  }
+
+  .location .location--info__heading {
+    margin: 0px 0px 30px 0px;
+  }
+  .location .location--info__content {
+    margin-bottom: 40px;
+  }
+  .location .location__arashiyama__row {
+    margin-top: 70px;
+  }
+  .location .location__arashiyama__row .location__arashiyama__row--info {
+    padding-left: 0px;
+    padding-right: 50px;
+  }
+
+  .top__places img {
+    height: 300px;
+  }
+  .top__places .top__places--img__info {
+    margin: 30px 0px;
+    max-width: 315px;
+  }
+  .top__places .top__places--img__box__container {
+    max-width: 315px;
+  }
+
+  .footer .footer__website-logo {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header .header-nav .navbar li a {
+    margin: 0px 50px 0px 0px;
+  }
+
+  .hero .hero__search--input-field {
+    width: 250px;
+    margin-right: 30px;
+  }
+
+  .large-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    padding-top: 8px;
+  }
+
+  .benefits {
+    padding: 90px 20px 110px 20px;
+  }
+  .benefits .benefits__elem .benefits__elem--heading {
+    margin-bottom: 20px;
+  }
+  .benefits .benefits__elem .benefits__elem--content {
+    max-width: 230px;
+    margin-bottom: 30px;
+  }
+
+  .location__images a {
+    margin: 15px 20px 0px 0px;
+  }
+  .location__images .location__images--first__row img {
+    height: 300px;
+  }
+  .location__images .location__images--second__row img {
+    height: 250px;
+  }
+  .location__images .loc-name {
+    font-size: 30px;
+  }
+
+  .location {
+    padding: 0px 20px 100px 20px;
+  }
+  .location .location__tottori__row .location__tottori__row--info {
+    padding-left: 20px;
+  }
+  .location .location__arashiyama__row {
+    margin-top: 50px;
+  }
+  .location .location__arashiyama__row .location__arashiyama__row--info {
+    padding-right: 20px;
+  }
+  .location .location--info__heading {
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+  }
+  .location .location--info__content {
+    margin-bottom: 20px;
+  }
+
+  .top__places .location--heading {
+    margin-left: 0px;
+  }
+  .top__places .underline {
+    margin-left: 0px;
+  }
+  .top__places img {
+    height: 280px;
+  }
+  .top__places .top__places--img__info {
+    max-width: 230px;
+  }
+  .top__places .top__places--img__box__container {
+    max-width: 230px;
+  }
+  .top__places .top__places--img__des {
+    padding: 15px 10px;
+  }
+  .top__places .top__places--img__des .top__places--names {
+    width: 40%;
+  }
+  .top__places .top__places--img__des .top__places--names p {
+    font-size: 15px;
+  }
+  .top__places .top__places--img__des .top__places--likes {
+    width: 60%;
+  }
+  .top__places .top__places--img__des .top__places--likes p {
+    font-size: 15px;
+  }
+  .top__places .top__places--img__des .top__places--likes p i {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .header__nav {
+    background-color: #000000;
+    padding: 0px 0px 20px 0px;
+    position: absolute;
+    top: 100px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s ease-in;
+  }
+  .header .header__nav .navbar li {
+    display: block;
+    margin-top: 25px;
+  }
+  .header .header__nav .navbar li a {
+    margin: 0px auto;
+  }
+  .header .checkbtn i {
+    display: block;
+  }
+  .header #check:checked ~ .header__nav {
+    left: 0;
+  }
+
+  .hero .hero__search--input-field {
+    float: none;
+    margin-right: 0px;
+    margin: 0px auto 30px auto;
+  }
+  .hero .hero__search--btn {
+    float: none;
+    width: 100%;
+  }
+  .hero .hero__search--btn {
+    text-align: center;
+  }
+
+  .benefits {
+    text-align: center;
+  }
+  .benefits .benefits__heading {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .benefits .benefits__elem {
+    float: none;
+    width: 100%;
+  }
+  .benefits .benefits__elem img {
+    margin: 20px auto 35px auto;
+    display: block;
+  }
+  .benefits .benefits__elem .benefits__elem--heading {
+    text-align: center;
+  }
+  .benefits .benefits__elem .benefits__elem--content {
+    text-align: center;
+    max-width: 100%;
+  }
+  .benefits .benefits__elem:nth-child(2) img:first-child {
+    margin-top: 0px;
+  }
+
+  .location__images .location__images__elem--left {
+    float: none;
+  }
+  .location__images hr {
+    margin-bottom: 10px;
+  }
+  .location__images a {
+    float: none;
+    margin: 10px 20px 10px 0px;
+  }
+  .location__images .location__images--first__row .location__images--box {
+    float: none;
+    width: 100%;
+  }
+  .location__images .location__images--first__row img {
+    width: 100%;
+  }
+  .location__images .location__images--second__row .location__images--box {
+    float: none;
+    width: 100%;
+  }
+  .location__images .location__images--second__row img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .location .location__tottori__row .location__tottori__row--img {
+    float: none;
+    width: 100%;
+  }
+  .location .location__tottori__row .location__tottori__row--info {
+    float: none;
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 30px;
+  }
+  .location .location__arashiyama__row {
+    margin-top: 40px;
+  }
+  .location .location__arashiyama__row .location__arashiyama__row--info {
+    float: none;
+    width: 100%;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .location .location__arashiyama__row .location__arashiyama__row--img {
+    float: none;
+    width: 100%;
+  }
+
+  .top__places .top__places--img__box {
+    float: none;
+    width: 100%;
+  }
+  .top__places .top__places--img__box__container {
+    max-width: 300px;
+  }
+  .top__places .top__places--img__info {
+    max-width: 300px;
+  }
+  .top__places a {
+    margin: 0px auto 30px auto;
+  }
+  .top__places .top__places--second__row {
+    margin-top: 0px;
+  }
+
+  .footer .footer__website-logo {
+    float: none;
+    width: 100%;
+  }
+  .footer .footer__company,
+.footer .footer__locations,
+.footer .footer__social-media {
+    float: none;
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

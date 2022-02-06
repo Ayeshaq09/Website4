@@ -1,0 +1,65 @@
+.header{
+    a{
+        display: inline-block;
+    }
+    img{
+        width:82px;
+        height:auto;
+    }
+    .header__nav{
+        float:right;
+        .navbar{
+            list-style: none;
+
+            li{
+                display: inline-block;
+                a{
+                    font-size:18px;
+                    text-transform: none;
+                    color:#ffffff;
+                    display: inline-block;
+                    margin:0px 70px 0px 0px;
+                    padding:0px 12px 12px 12px;
+                    text-decoration: none;
+                    position:relative;
+                    &::after{
+                        content: "";
+                        width:0%;
+                        margin:auto;
+                        position: absolute;
+                        bottom:0;
+                        left: 0;
+                        right:0px;
+                        background:#ffffff;
+                        height:4px;
+                        transition: all 0.5s;
+                    }
+                    &:hover::after{
+                        width:100%;
+                    }
+                }
+                &:nth-child(4) a:nth-child(1){
+                    margin-right: 0px;
+                }
+                
+            }
+        }
+        
+    }
+
+    .checkbtn i{
+        color:#ffffff;
+        font-size: 25px;
+        position:absolute;
+        right:60px;
+        top:58px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+
+    
+}
+    

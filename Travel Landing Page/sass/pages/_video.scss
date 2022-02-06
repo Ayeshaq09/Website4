@@ -1,0 +1,37 @@
+.video{
+    // padding:300px 20px;
+    // background-image:linear-gradient(rgba(21, 24, 36, 0.4),rgba(21, 24, 36, 0.4)),
+    // url(../images/video-bg.png);
+    // background-size: 100% 100%;
+    // background-repeat: no-repeat;
+    // position: relative;
+
+    // i{
+    //     position:absolute;
+    //     top:50%;
+    //     left:50%;
+    //     transform: translate(-50%,-50%);
+    //     font-size: 100px;
+    //     color:#ffffff;
+    //     cursor: pointer;
+    // }
+    position:relative;
+        /* padding: 0; */
+        /* overflow: hidden; */
+        padding-bottom:56.25%;
+        width:100%;
+        height:0;
+    /* .video::before{
+        padding-bottom:56.25%;
+    } */
+    iframe{
+        position:absolute;
+        top:0px;
+        left:0px;
+        bottom:0px;
+        width:100%;
+        height:100%;
+    }
+    
+}
+

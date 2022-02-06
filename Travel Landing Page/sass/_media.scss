@@ -1,0 +1,327 @@
+@media screen and (max-width:1200px){
+    .location__images{
+        .loc-name{
+            font-size:40px;
+        }
+    }
+    .location{
+        .location--info__heading{
+            margin:0px 0px 30px 0px;
+        }
+        .location--info__content{
+            margin-bottom: 40px;
+        }
+        .location__arashiyama__row{
+            margin-top: 70px;
+            .location__arashiyama__row--info{
+                padding-left: 0px;
+                padding-right:50px;
+            }
+        }
+    }
+    .top__places{
+        img{
+            height:300px;
+        }
+        .top__places--img__info{
+            margin:30px 0px;
+            max-width: 315px;
+        }
+        .top__places--img__box__container{
+            max-width:315px;
+        }
+    }
+    .footer{
+        .footer__website-logo {
+            text-align: center;
+        }
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .header{
+        .header-nav{
+            .navbar{
+                li{
+                    a{
+                        margin:0px 50px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+    .hero{
+        .hero__search--input-field{
+            width:250px;
+            margin-right: 30px;
+        }
+    }
+    .large-btn{
+        width:100px;
+        height: 40px;
+        font-size: 18px;
+        padding-top: 8px;
+    }
+
+    .benefits{
+        padding:90px 20px 110px 20px;
+
+        .benefits__elem{
+            .benefits__elem--heading{
+                margin-bottom: 20px;
+            }
+            .benefits__elem--content{
+                max-width: 230px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .location__images{
+        a{
+            margin:15px 20px 0px 0px;
+        }
+        .location__images--first__row{
+            img{
+                height: 300px;
+            }
+        }
+        .location__images--second__row{
+            img{
+                height: 250px;
+            }
+        }
+        .loc-name{
+            font-size: 30px;
+        }
+    }
+    .location{
+        padding:0px 20px 100px 20px;
+        .location__tottori__row{
+            .location__tottori__row--info{
+                padding-left: 20px;
+            }
+        }
+        .location__arashiyama__row{
+            margin-top: 50px;
+            .location__arashiyama__row--info{
+                padding-right: 20px;
+            }
+        }
+        .location--info__heading{
+            font-size: 25px;
+            margin:0px 0px 10px 0px;
+        }
+        .location--info__content{
+            margin-bottom: 20px;
+        }
+        
+    }
+
+    .top__places{
+        .location--heading{
+            margin-left:0px;
+        }
+        .underline{
+            margin-left:0px;
+        }
+        img{
+            height:280px;
+        }
+        .top__places--img__info{
+            max-width: 230px;
+        }
+        .top__places--img__box__container{
+            max-width:230px;
+        }
+        .top__places--img__des{
+            padding:15px 10px;
+            .top__places--names{
+                width:40%;
+                p{
+                    font-size: 15px;
+                }
+            }
+            .top__places--likes{
+                width:60%;
+                p{
+                    font-size: 15px;
+                    i{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .header{
+        .header__nav{
+            background-color: #000000;
+            padding:0px 0px 20px 0px;
+            position:absolute;
+            top:100px;
+            left:-100%;
+            width:100%;
+            height:100vh;
+            text-align: center;
+            transition: all .5s ease-in;
+
+            .navbar li{
+                display: block;
+                margin-top:25px;
+                a{
+                    margin:0px auto;
+                }
+            }
+        }
+       
+        .checkbtn i{
+            display: block;
+        }
+        #check:checked ~ .header__nav{
+            left:0;
+        }
+    }
+    .hero{
+        .hero__search--input-field{
+            float:none;
+            margin-right:0px;
+            margin:0px auto 30px auto;
+        }
+        .hero__search--btn{
+            float:none;
+            width:100%;
+        }
+        .hero__search--btn{
+            text-align: center;
+        }
+    }
+    .benefits{
+        text-align: center;
+        .benefits__heading{
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .benefits__elem{
+            float:none;
+            width:100%;
+            
+            img{
+                margin: 20px auto 35px auto;
+                display: block;
+            }
+            .benefits__elem--heading{
+                text-align: center;
+            }
+            .benefits__elem--content{
+                text-align: center;
+                max-width: 100%;
+            }
+
+            &:nth-child(2) img:first-child{
+                margin-top:0px;
+            }
+        }
+    }
+    .location__images{
+        .location__images__elem--left{
+            float:none;
+        }
+        hr{
+            margin-bottom: 10px;
+        }
+        a{
+            float:none;
+            margin: 10px 20px 10px 0px;
+        }
+        .location__images--first__row{
+            .location__images--box{
+                float:none;
+                width:100%;
+            }
+            img{
+                // height:354px;
+                // filter:brightness(50%);
+                width:100%;
+            }
+        }
+        .location__images--second__row{
+            .location__images--box{
+                float:none;
+                width:100%;
+            }
+            img{
+                height:300px;
+                // filter:brightness(50%);
+                width:100%;
+            }
+        }
+    }
+    .location{
+        .location__tottori__row{
+            .location__tottori__row--img{
+                float:none;
+                width:100%;
+            }
+    
+            .location__tottori__row--info{
+                float: none;
+                width:100%;
+                padding-left: 0px;
+                margin-top:30px;
+            }
+        }
+    
+    
+        .location__arashiyama__row{
+            margin-top: 40px;
+            .location__arashiyama__row--info{
+                float: none;
+                width:100%;
+                padding: 0px;
+                margin-top:30px;
+            }
+    
+            .location__arashiyama__row--img{
+                float:none;
+                width:100%;
+            }
+        }
+    }
+
+    .top__places{
+        .top__places--img__box{
+            float:none;
+            width:100%;
+        }
+        .top__places--img__box__container{
+            max-width:300px;
+        }
+        .top__places--img__info{
+            max-width: 300px;
+        }
+        a{
+            margin:0px auto 30px auto;
+        }
+        .top__places--second__row{
+            margin-top:0px;
+        }
+    }
+    .footer{
+        .footer__website-logo{
+            float:none;
+            width:100%;
+        }
+        .footer__company,
+        .footer__locations,
+        .footer__social-media{
+            float:none;
+            width:100%;
+            margin: 30px auto;
+            text-align: center;
+        }
+    }
+    
+}
